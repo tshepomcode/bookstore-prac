@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
     # Third-party
     "crispy_forms",
     "crispy_bootstrap5",
@@ -175,3 +176,12 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+DEFAULT_FROM_EMAIL = "admin@djangobookstore.com"
+
+# When using smtp, change above to EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# and fill in the below details. Maybe use environs?
+# EMAIL_HOST = , 
+# EMAIL_HOST_USER = , 
+# EMAIL_HOST_-PASSWORD =, 
+# EMAIL_PORT = ,
+# EMAIL_USE_TLS = 
