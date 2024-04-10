@@ -6,3 +6,4 @@ psycopg2-binary==2.9.9
 sqlparse==0.4.4
 django-allauth==0.50.0
 environs[django]==9.5.0
+pillow==10.3.0
